@@ -21,3 +21,15 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# gradle stuff
+*.gradle
+
+# .idea stuff
+*.idea
+
+# build stuff
+build/
+
+# Meta files
+META-INF/

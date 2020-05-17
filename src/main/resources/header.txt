@@ -1,0 +1,7 @@
+\noindent \textbf{companyName},\\
+\noindent companyAddress,\\
+\noindent companyZipCodeInfo\\
+
+\noindent Samir Adrik,\\
+\noindent Granbergstubben 150,\\
+\noindent 1275 Oslo\\
