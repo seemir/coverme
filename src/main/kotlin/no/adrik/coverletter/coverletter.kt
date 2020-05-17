@@ -112,8 +112,8 @@ class CoverLetter(
 
 fun main() {
     val coverLetter = CoverLetter(
-        "Retriever", "Langkaia 1", "0150 Oslo",
-        "Dataanalytiker / Bi-analytiker", suckUpLine = "Nordens største private medieanalysemiljø"
+        "Some Company", "Some Address", "Some ZipCodeInfo",
+        "some position", suckUpLine = "the worlds best company"
     )
     coverLetter.createCoverLetter()
 }
