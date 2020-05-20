@@ -139,9 +139,8 @@ class CoverLetter(
 
 fun main() {
     val coverLetter = CoverLetter(
-        "Statkraft", "Sluppenvegen 17B", "7037 Trondheim",
-        "Analytiker", "langsiktige analyser av produksjon og inntekter fra vannkraftverk",
-        "finn.no", "et av verdens største og ledende kraftselskap"
+        "CompanyName", "CompanyAddress", "CompanyZipCodeInfo",
+        "Position", "Field", "SearchEngine", "SuckUpLine"
     )
     coverLetter.createCoverLetter(latex = false, writeToFile = true)
 }
