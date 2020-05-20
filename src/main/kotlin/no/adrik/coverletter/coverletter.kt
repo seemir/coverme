@@ -102,18 +102,46 @@ class CoverLetter(
         return "${baseEnding.replace("position", position).replace("companyName", companyName)}\n\n"
     }
 
-    fun createCoverLetter() {
-        println(
-            "$preamble${createHeader()}${createDateStamp()}${createTitle()}" +
-                    "${createIntro()}$education$experience${createEnding()}"
-        )
+    fun createCoverLetter(latex: Boolean = true, writeToFile: Boolean = false) {
+        val rawLatex = "$preamble${createHeader()}${createDateStamp()}${createTitle()}" +
+                "${createIntro()}$education$experience${createEnding()}"
+
+        var fileContent: String = rawLatex
+        var postfix = "latex.tex"
+
+        if (!latex) {
+            fileContent = rawLatex.replace(preamble, "").replace("noindent", "")
+                .replace("textbf{", "").replace("\\", "")
+                .replace("end{document}", "").replace("begin{flushright}", "")
+                .replace("end{flushright}", "").replace("}", "")
+                .replace("Oslo", " Oslo")
+            postfix = "plain.txt"
+        }
+
+        if (writeToFile) {
+            val now = LocalDateTime.now()
+            val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+            val today = now.format(formatter).replace(".", "_")
+                .replace(":", "").replace(" ", "_")
+
+            val coverLetterPath = "$resourcesPath/cover_letters/"
+
+            File(coverLetterPath).mkdir()
+
+            val fileName =
+                "${coverLetterPath}søknad_${companyName.toLowerCase()}_${position.toLowerCase()}_${today}_$postfix"
+            File(fileName).bufferedWriter().use { out -> out.write(fileContent) }
+        } else {
+            println(fileContent)
+        }
     }
 }
 
 fun main() {
     val coverLetter = CoverLetter(
-        "Some Company", "Some Address", "Some ZipCodeInfo",
-        "some position", suckUpLine = "the worlds best company"
+        "Statkraft", "Sluppenvegen 17B", "7037 Trondheim",
+        "Analytiker", "langsiktige analyser av produksjon og inntekter fra vannkraftverk",
+        "finn.no", "et av verdens største og ledende kraftselskap"
     )
-    coverLetter.createCoverLetter()
+    coverLetter.createCoverLetter(latex = false, writeToFile = true)
 }

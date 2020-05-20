@@ -33,3 +33,6 @@ build/
 
 # Meta files
 META-INF/
+
+# Cover letters
+cover_letters
