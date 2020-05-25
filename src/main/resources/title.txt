@@ -1,1 +1,2 @@
-\noindent \textbf{Søknad på stillingen som position hos companyName}\\
+\noindent\simple_text\textbf{SØKNAD PÅ STILLINGEN SOM position HOS companyName}\\
+

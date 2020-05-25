@@ -1,7 +1,13 @@
-\noindent \textbf{companyName},\\
-\noindent companyAddress,\\
-\noindent companyZipCodeInfo\\
+\noindent\textbf{companyName},\\
+\noindent\simple_textcompanyAddress
 
-\noindent Samir Adrik,\\
-\noindent Granbergstubben 150,\\
-\noindent 1275 Oslo\\
+\begin{tabular}{ l l }
+\hspace*{-0.75cm}\textbf{Referanse} & \textbf{Frist}\\
+\hspace*{-0.75cm}finnCode & deadLine\\
+&\\
+&
+\end{tabular}
+
+\noindent\simple_textSamir Adrik,\\
+\noindent\simple_textGranbergstubben 150,\\
+\noindent\simple_text1275 Oslo\\

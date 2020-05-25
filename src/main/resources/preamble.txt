@@ -8,7 +8,7 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \usepackage{textcomp}
 \usepackage{color}
-\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
 \usepackage[bottom = 2cm, top = 2cm, left = 3.5cm, right =3.5cm]{geometry}
 
 \begin{document}
