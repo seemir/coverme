@@ -10,6 +10,7 @@
 \usepackage{color}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
 \usepackage[bottom = 2cm, top = 2cm, left = 3.5cm, right =3.5cm]{geometry}
+\usepackage{mathpazo}
 
 \begin{document}
 \vspace*{0,10\textheight}
