@@ -39,8 +39,8 @@ class AdInfoParser(private val finnCode: String) {
         val positionInfo = document.getElementsByAttributeValue("class", "definition-list")
         val companyInfo = document.getElementsByAttributeValue("class", "definition-list definition-list--inline")
 
-        val titles = positionInfo.select("dt").plus(companyInfo.select("dt")[2]).map { it.ownText() }
-        val values = positionInfo.select("dd").plus(companyInfo.select("dd")[2]).map { it.ownText() }
+        val titles = positionInfo.select("dt").plus(companyInfo.select("dt")).map { it.ownText() }
+        val values = positionInfo.select("dd").plus(companyInfo.select("dd")).map { it.ownText() }
         return titles.zip(values).toMap()
     }
 }

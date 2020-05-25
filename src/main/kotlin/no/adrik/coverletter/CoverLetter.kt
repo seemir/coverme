@@ -105,6 +105,7 @@ class CoverLetter(
 
             val coverLetterPath = "$resourcesPath/cover-letters/"
 
+            File(coverLetterPath).deleteRecursively()
             File(coverLetterPath).mkdir()
 
             val fileName =
@@ -118,9 +119,6 @@ class CoverLetter(
 }
 
 fun main() {
-    val coverLetter =
-        CoverLetter(
-            "finnCode", position = "position", suckUpLine = "suckUpLine"
-        )
-    coverLetter.createCoverLetter(latex = false, writeToFile = true)
+    val coverLetter = CoverLetter("finnCode", suckUpLine = "suckUpLine")
+    coverLetter.createCoverLetter(latex = true, writeToFile = true)
 }
