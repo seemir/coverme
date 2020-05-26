@@ -50,10 +50,14 @@ class CoverLetter(
             .replace("finnCode", finnCode)}\n\n"
     }
 
-    private fun createDateStamp(): String {
+    private fun today(): String {
         val now = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("dd.MMMM.yyyy")
-        val today = now.format(formatter)
+        return now.format(formatter)
+    }
+
+    private fun createDateStamp(): String {
+        val today = today()
         val baseDate = readFromResources("date-stamp.txt")
         return "${baseDate.replace("today", today)}\n\n"
     }
@@ -76,9 +80,18 @@ class CoverLetter(
         return "${baseEnding.replace("position", position).replace("companyName", companyName)}\n\n"
     }
 
-    fun createCoverLetter(latex: Boolean = true, writeToFile: Boolean = false) {
-        val rawCoverLetter = "$preamble${createHeader()}${createDateStamp()}${createTitle()}" +
+    fun createCoverLetter(latex: Boolean = true, writeToFile: Boolean = true, includeCv: Boolean = true) {
+        var rawCoverLetter = "$preamble${createHeader()}${createDateStamp()}${createTitle()}" +
                 "${createIntro()}$education$experience${createEnding()}"
+
+        val endDocument = "${readFromResources("end-document.txt")}\n\n"
+        val cv = "${readFromResources("cv.txt")}\n\n"
+
+        rawCoverLetter = if (includeCv) {
+            "${rawCoverLetter}$cv"
+        } else {
+            "${rawCoverLetter}$endDocument"
+        }
 
         val fileContent: String
         val postfix: String
@@ -86,10 +99,29 @@ class CoverLetter(
         if (!latex) {
             fileContent = rawCoverLetter.replace(preamble, "").replace("\\noindent", "")
                 .replace("\\simple_text", "").replace("\\hspace*{-0.75cm}", "")
-                .replace("&", "").replace("\\begin{tabular}{ l l }", "")
+                .replace("(\\today)\\\\[0,5cm]", today()).replace("\\centering", "")
+                .replace("&", "").replace("\\begin{tabular}{ll}", "")
+                .replace("\\begin{tabularx}{\\textwidth}", "")
+                .replace("\\vspace*{-0,6cm}", "").replace("\\vspace*{-0,4cm}", "")
+                .replace("\\texttt{", "").replace("\\begin{small}", "")
+                .replace("\\end{small}", "").replace("[0,1cm]", "")
+                .replace("\\footnotesize", "").replace("\\normalsize", "")
+                .replace("\\newpage", "").replace("\\Large", "")
+                .replace("\\begin{centering}", "").replace("\\end{centering}", "")
+                .replace("\\begin{table}[h!]", "").replace("\\end{table}", "")
                 .replace("\\end{tabular}", "").replace("\\textbf{", "")
                 .replace("\\end{document}", "").replace("\\begin{flushright}", "")
                 .replace("\\end{flushright}", "").replace(finnRef, searchEngine)
+                .replace("\\small", "").replace("\\end{tabularx}", "")
+                .replace("[0,2cm]", "").replace("\\vspace*{-0,3cm}", "")
+                .replace("\\textit{", "").replace("\\vspace{-0,2cm}", "")
+                .replace("{p{2.1cm}p{13cm}}", "").replace("{lX}", "")
+                .replace("\\textcopyright", "").replace("[0,25cm]", "")
+                .replace("\\href{https://nmbu.brage.unit.no/nmbu-xmlui/handle/11250/", "")
+                .replace("2580610", "").replace("2403557", "")
+                .replace("\\href{https://github.com/seemir}{", "")
+                .replace("\\href{https://www.codewars.com/users/seemir}{", "")
+                .replace("\\endhead","").replace("{", "")
                 .replace("}", "").replace("\\", "")
             postfix = "plain.txt"
         } else {
@@ -120,5 +152,5 @@ class CoverLetter(
 
 fun main() {
     val coverLetter = CoverLetter("finnCode", suckUpLine = "suckUpLine")
-    coverLetter.createCoverLetter(latex = true, writeToFile = true)
+    coverLetter.createCoverLetter()
 }

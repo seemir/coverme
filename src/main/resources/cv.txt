@@ -1,0 +1,121 @@
+\newpage
+
+\begin{centering}
+\noindent \Large \textbf{Curriculum Vitae}\\
+\noindent \footnotesize (\today)\\[0,5cm]
+
+\normalsize \textbf{Samir Adrik}\\
+\begin{table}[h!]
+    \footnotesize
+    \centering
+    \begin{tabular}{ll}
+    E-post & \texttt{samir.adrik@gmail.com}\\
+    Mobil & +47 98 63 28 08\\
+    Adresse & Granbergstubben 150\\
+    & 1275 Oslo\\
+    Fødselsdato & 6. juni 1989 (30 år)\\
+    Nasjonalitet & Norsk\\
+    \end{tabular}
+\end{table}
+\end{centering}
+\begin{small}
+\vspace*{-0,4cm}\noindent \textbf{Nøkkelkvalifikasjoner}\\[0,1cm]
+\end{small}
+\noindent \small En økonomisk og teknologisk anlagt person med nesten 6 års erfaring fra IT og transport sektoren. Med en bakgrunn i anvendt statistikk fra studiene kan det nevnes at jeg elsker å jobbe med økonomisk analyse og statistisk modellering. Jeg er kunnskapstørst, ekstremt lærevillig og har en levende interesse for økonomi, teknologi og realfag. Jeg har evnen til både team arbeid og selvstendig arbeid, samt er en god problemløser som liker utfordringer.\\
+
+\noindent \textbf{Utdannelse}
+\vspace*{-0,6cm}\begin{table}[h!]
+    \footnotesize
+    \begin{tabularx}{\textwidth}{lX}
+    08.2016-12.2018 & \textbf{Master i bioinformatikk- og anvendt statistikk}\\
+        & Norges miljø- og biovitenskapelige universitet\\[0,1cm]
+        & Masteroppgave: \href{https://nmbu.brage.unit.no/nmbu-xmlui/handle/11250/2580610}{On the Application of Machine Learning Techniques for Phenotypic Classification and Clustering of Heart Failure Patients} - Karakter: \textbf{B}\\[0,2cm]
+    08.2013-06.2016 &  \textbf{Master of Science in Economics - Financial Economics}\\
+        & Handelshøyskolen, NMBU\\
+        & Norges miljø- og biovitenskapelige universitet\\[0,1cm]
+        & Masteroppgave: \href{https://nmbu.brage.unit.no/nmbu-xmlui/handle/11250/2403557}{Evaluating Benchmarks for Norwegian Exchange Rate Forecasting} - Karakter: \textbf{A}\\[0,2cm]
+    08.2009-01.2014 & \textbf{Bachelor i samfunnsøkonomi}\\
+        & Handelshøyskolen, NMBU\\
+        & Norges miljø- og biovitenskapelige universitet
+    \end{tabularx}
+\end{table}
+
+\vspace*{-0,3cm}\noindent \textbf{\textbf{Arbeidserfaring}}
+\vspace*{-0,6cm}\begin{table}[h!]
+    \footnotesize
+    \begin{tabularx}{\textwidth}{lX}
+06.2018-01.2020. & \textbf{Bane NOR}: \textit{Analytiker}. Arbeidsoppgaver: Gjennomføre energiavregning for togselskaper i Europa som bruker avregningssystemet EREX. Utføre kontroll, analyse, testing og godkjenning av energimåledata fra tog. Utarbeide og vedlikeholde rutiner for håndtering av energimåledata.\\[0,1cm]
+06.2013-10.2018 & \textbf{Securitas}: \textit{Mobilvekter}. Arbeidsoppgaver: På uregelmessige tidspunkt i døgnet er vekterens hovedoppgave å forebygge uønskede hendelser. Vekterne foretar inspeksjoner av næringsbygg med den hensikt å drive forebyggende sikkerhetsarbeid. Jeg var også opplæringsansvarlig for nye mobilvektere.\\[0,1cm]
+09.2015-03.2016 & \textbf{IBM Global Business Services}: \textit{Graduate applikasjonskonsulent, DevOps}. Del av IBMs consulting-by-degree program. Tilegnet meg mye kunnskap om DevOps strukturerte IT-prosjekter. Fullførte ISTQB\textcopyright sertifisering innen test på Foundation og Agile-nivå. Aktiv i produksjonen av tilbud, samt bistått partnere med kundeanalyser og markedsundersøkelser.\\[0,1cm]
+12.2012-09.2015 & \textbf{IBM Global Business Services}: \textit{Prosjektkoordinator} for kunde innen offentlig sektor. Arbeidsoppgaver: Koordinere prosjektarbeidet inn mot kunden. Utviklet verktøy som automatiserte mye av arbeidet relatert til prosjektstøtte. Disse verktøyene gjaldt arbeidet tilknyttet timerapportering, fakturabehandling og økonomien til prosjektet.\\[0,1cm]
+09.2013-12.2013 & \textbf{Handelshøyskolen, NMBU}: \textit{Øvingslærer} i BUS133 - Excel for økonomer. Arbeidsoppgaver: Veilede studenter under ukentlige studentøvinger.\\[0,1cm]
+06.2012-12.2012 & \textbf{IBM Software Group}: \textit{Studentengasjement}. Arbeidsoppgaver: Bistå med salgsaktiviteter for forretningsledere innen Software brands. Kartlegge potensielle kunder, markedsundersøkelser, samt analysering av finansiell og økonomisk data internt for IBM.\\[0,1cm]
+09.2012-12.2012 & \textbf{Statistisk sentralbyrå}: \textit{Intervjuer}. Arbeidsoppgaver: Intervjuerens arbeid består i å intervjue personer som blir trukket ut til å være med i SSBs undersøkelser. De skal kontakte respondentene og deretter gjennomføre intervju etter fastlagte prosedyrer.\\[0,1cm]
+05.2011-09.2012 & \textbf{BlueStep Bank AB}: \textit{Kundeveileder}. Arbeidsoppgaver: Kartlegge informasjon om kunders finansieringsbehov, samt bistå med innhenting av gjeldsopplysninger på kundene. I tillegg var jeg en del av BlueSteps kundesenter som bistår eksisterende og potensielle kunder med spørsmål rundt låne- og spareprodukter.
+    \end{tabularx}
+\end{table}
+
+\vspace{-0,2cm}\noindent \textbf{\textbf{Programmeringsferdigheter}}
+\footnotesize
+\vspace{-0,2cm} \begin{tabularx}{\textwidth}{p{2.1cm}p{13cm}}
+\textbf{Språk} & \textbf{Erfaring}\\[0,1cm]
+\endhead
+\textbf{Python} & God erfaring, samt fullført emne INF200 - Videregående programmering - Karakter: \textbf{B}.\\
+\textbf{Kotlin} & God erfaring fra arbeid med egne prosjekter. Jobber mye med å forbedre kunnskapene mine.\\
+\textbf{R} & God erfaring, samt fullført og bestått emne STIN300 - Statistisk programmering i R.\\
+\textbf{\LaTeX} & God erfaring, samt brukte dette markersingsspråket i arbeidet med masteroppgavene mine.\\
+\textbf{SQL} & God erfaring, samt fullført emne INF230 - Datahåndtering og analyse - Karakter: \textbf{B}.\\
+\textbf{VB/VBA} & God erfaring, samt fullført emne BUS133 - Excel for økonomer - Karakter: \textbf{B}.\\
+\end{tabularx}
+
+\noindent\footnotesize For andre IT ferdigheter kan det også nevnes:
+\vspace{-0,2cm} \begin{tabularx}{\textwidth}{p{2.1cm}p{13cm}}
+\textbf{Program} & \textbf{Erfaring}\\[0,25cm]
+\endhead
+\textbf{BI:}\\
+\textbf{Power BI} & God erfaring med å lage avanserte dashboards og integreringer med eksterne data kilder\\
+\textbf{Power Query} & Primære verktøy for transformasjon og data wrangling\\
+&\\
+\textbf{CD / CI}\\
+\textbf{Codecov} & Primære overvåkningssystem for testdekning av programvareprosjekter.\\
+\textbf{Travis CI} & Primære kontinuerlig integrasjonstjeneste som brukes til å bygge og teste programvareprosjektene mine.\\
+&\\
+\textbf{IDE:}\\
+\textbf{Intellij} & Primære IDE for Kotling utvikling\\
+\textbf{PyCharm} & Primære IDE for Python utvikling\\
+\textbf{RStudio} & Primære IDE for R utvikling\\
+\textbf{MySQL WB} & Primære visuelle databasedesignverktøy\\
+\textbf{Overleaf} & Primære IDE for \LaTeX-scripting\\
+&\\
+\textbf{Git:}\\
+\textbf{GitBash} & Primære bash terminal\\
+\textbf{Github} & Primære Git plattform hvor alle prosjektene mine er hostet (har også erfaring med BitBucket)\\
+\textbf{GitKraken} & Primære Git gui client, har også brukt Sourcetree\\
+&\\
+\textbf{Spreadsheet}\\
+\textbf{Excel} & God erfaring, var også øvingslærer i faget BUS133 - Excel for økonomer ved NMBU.
+\end{tabularx}
+
+\footnotesize
+\noindent \textbf{Profiles:}
+\vspace{-0,2cm} \footnotesize
+    \begin{tabularx}{\textwidth}{p{2.1cm}p{13cm}}
+\textbf{Github} & \href{https://github.com/seemir}{github.com/seemir}\\
+\textbf{Codewars} & \href{https://www.codewars.com/users/seemir}{codewars.com/users/seemir}
+    \end{tabularx}
+
+\noindent \textbf{\textbf{Sertifiseringer}}
+\vspace{-0,2cm} \footnotesize
+    \begin{tabularx}{\textwidth}{p{2.1cm}p{13cm}}
+10.2018 & \textbf{Certified Scrum Product Owner (CSPO)}\\
+06.2016 & \textbf{ISTQB Certified Model Based Tester}\\
+02.2016 & \textbf{ISTQB Certified Agile Tester Extension}\\
+12.2015 & \textbf{ISTQB Certified Tester Foundation Level}
+    \end{tabularx}
+
+\noindent \textbf{Referanser}\\
+
+\footnotesize
+\textbf{Oppgis ved forespørsel}
+
+\end{document}

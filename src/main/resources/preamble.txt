@@ -7,9 +7,12 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \usepackage{textcomp}
+\usepackage[bottom = 2cm, top = 1.5cm, left = 3cm, right =3cm]{geometry}
 \usepackage{color}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
-\usepackage[bottom = 2cm, top = 2cm, left = 3.5cm, right =3.5cm]{geometry}
+\usepackage[final]{microtype}
+\usepackage{longtable}
+\usepackage{ltablex}
 \usepackage{mathpazo}
 
 \begin{document}

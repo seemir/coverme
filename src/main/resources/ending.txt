@@ -3,5 +3,3 @@
 \noindent\simple_textMed vennlig hilsen\\
 
 \noindent\simple_text\textbf{Samir Adrik}\\
-
-\end{document}

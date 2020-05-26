@@ -1,7 +1,7 @@
 \noindent\textbf{companyName},\\
 \noindent\simple_textcompanyAddress
 
-\begin{tabular}{ l l }
+\begin{tabular}{ll}
 \hspace*{-0.75cm}\textbf{Referanse} & \textbf{Frist}\\
 \hspace*{-0.75cm}finnCode & deadLine\\
 &\\
