@@ -70,14 +70,16 @@ class CoverLetter(
 
     private fun createIntro(): String {
         val baseIntro = readFromResources("intro.txt")
-        return "${baseIntro.replace("companyName", companyName).replace("position", position)
+        return "${baseIntro.replace("companyName", companyName)
+            .replace("position", position.toLowerCase())
             .replace("field", field).replace("finnRef", finnRef)
             .replace("suckUpLine", suckUpLine)}\n\n"
     }
 
     private fun createEnding(): String {
         val baseEnding = readFromResources("ending.txt")
-        return "${baseEnding.replace("position", position).replace("companyName", companyName)}\n\n"
+        return "${baseEnding.replace("position", position.toLowerCase())
+            .replace("companyName", companyName)}\n\n"
     }
 
     fun createCoverLetter(latex: Boolean = true, writeToFile: Boolean = true, includeCv: Boolean = true) {
@@ -98,31 +100,37 @@ class CoverLetter(
 
         if (!latex) {
             fileContent = rawCoverLetter.replace(preamble, "").replace("\\noindent", "")
-                .replace("\\simple_text", "").replace("\\hspace*{-0.75cm}", "")
-                .replace("(\\today)\\\\[0,5cm]", today()).replace("\\centering", "")
-                .replace("&", "").replace("\\begin{tabular}{ll}", "")
-                .replace("\\begin{tabularx}{\\textwidth}", "")
-                .replace("\\vspace*{-0,6cm}", "").replace("\\vspace*{-0,4cm}", "")
-                .replace("\\texttt{", "").replace("\\begin{small}", "")
-                .replace("\\end{small}", "").replace("[0,1cm]", "")
-                .replace("\\footnotesize", "").replace("\\normalsize", "")
-                .replace("\\newpage", "").replace("\\Large", "")
-                .replace("\\begin{centering}", "").replace("\\end{centering}", "")
-                .replace("\\begin{table}[h!]", "").replace("\\end{table}", "")
-                .replace("\\end{tabular}", "").replace("\\textbf{", "")
-                .replace("\\end{document}", "").replace("\\begin{flushright}", "")
-                .replace("\\end{flushright}", "").replace(finnRef, searchEngine)
-                .replace("\\small", "").replace("\\end{tabularx}", "")
-                .replace("[0,2cm]", "").replace("\\vspace*{-0,3cm}", "")
-                .replace("\\textit{", "").replace("\\vspace{-0,2cm}", "")
-                .replace("{p{2.1cm}p{13cm}}", "").replace("{lX}", "")
-                .replace("\\textcopyright", "").replace("[0,25cm]", "")
+//               Spacing, date and generic tags
+                .replace("\\begin", "").replace("\\end", "")
+                .replace("\\hspace", "").replace("\\vspace", "")
+                .replace("(\\today)\\\\[0,5cm]", today()).replace("*{-0.75cm}", "")
+                .replace("*{-0,3cm}", "").replace("*{-0,4cm}", "")
+                .replace("*{-0,6cm}", "").replace("*{-0,2cm}", "")
+                .replace("[0,1cm]", "").replace("[0,2cm]", "")
+                .replace("[0,5cm]", "").replace("[1,1cm]", "")
+                .replace("[0,8cm]", "").replace("p{2cm}p{13cm}", "")
+                .replace("{document}", "").replace("\\head", "")
+                .replace("\\endhead", "").replace("simple_text", "")
+//               Font tags
+                .replace("\\newpage", "").replace("\\textcopyright", "")
+                .replace("\\centering", "").replace("flushright", "")
+                .replace("{centering}", "").replace("\\textwidth", "")
+                .replace("\\texttt", "").replace("\\footnotesize", "")
+                .replace("\\normalsize", "").replace("\\Large", "")
+                .replace("\\textbf", "").replace("\\small", "")
+                .replace("small", "").replace("\\textit", "")
+//               Table tags
+                .replace("tabularx", "").replace("tabular", "")
+                .replace("{table}", "").replace("{lX}", "")
+                .replace("&", "").replace("[h!]", "")
+                .replace("{ll}", "")
+//               Reference tags
                 .replace("\\href{https://nmbu.brage.unit.no/nmbu-xmlui/handle/11250/", "")
                 .replace("2580610", "").replace("2403557", "")
-                .replace("\\href{https://github.com/seemir}{", "")
+                .replace("\\href{https://github.com/seemir}{", "").replace(finnRef, searchEngine)
                 .replace("\\href{https://www.codewars.com/users/seemir}{", "")
-                .replace("\\endhead","").replace("{", "")
-                .replace("}", "").replace("\\", "")
+//               Escape characters
+                .replace("{", "").replace("}", "").replace("\\", "")
             postfix = "plain.txt"
         } else {
             fileContent = rawCoverLetter.replace("\\simple_text", " ")
