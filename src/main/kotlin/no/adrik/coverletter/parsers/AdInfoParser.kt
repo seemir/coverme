@@ -1,4 +1,4 @@
-package no.adrik.coverletter
+package no.adrik.coverletter.parsers
 
 import org.jsoup.Jsoup
 
