@@ -13,7 +13,7 @@ E-post                  &\texttt{samir.adrik@gmail.com}\\
 Mobil                   &+47 98 63 28 08\\
 Adresse                 &Granbergstubben 150\\
                         &1275 Oslo\\
-Fødselsdato             &6. juni 1989 (30 år)\\
+Fødselsdato             &6. juni 1989 (31 år)\\
 Nasjonalitet            &Norsk\\
 \end{tabular}
 \end{table}
@@ -47,7 +47,9 @@ En økonomisk og teknologisk anlagt person med nesten 6 års erfaring fra IT og 
 \vspace*{-0,6cm}\begin{table}[h!]
 \footnotesize
 \begin{tabularx}{\textwidth}{lX}
-06.2018-01.2020.        &\textbf{Bane NOR}: \textit{Analytiker}. Arbeidsoppgaver: Gjennomføre energiavregning for togselskaper i Europa som bruker avregningssystemet EREX. Utføre kontroll, analyse, testing og godkjenning av energimåledata fra tog. Utarbeide og vedlikeholde rutiner for håndtering av energimåledata.\\[0,8cm]
+06.2020-d.d.            &\textbf{Bymiljøetaten, Oslo kommune}: \textit{Data Analytiker}. Arbeidsoppgaver: Innhente og bearbeide datagrunnlag for videre bruk i analyse, utvikling av dashboards og forvaltning av rammeverk for BI, støtte ulike fagenheter i etaten og Oslo kommune for å tilse best mulig datakvalitet, tilegne meg ny kunnskap og kompetanse innen ulike fagområder i henhold til avdelingens ansvarsområder og oppgaver, bidra til automatisering og effektivisering av etatens arbeidsprosesser\\[1,5cm]
+
+06.2018-01.2020         &\textbf{Bane NOR}: \textit{Analytiker}. Arbeidsoppgaver: Gjennomføre energiavregning for togselskaper i Europa som bruker avregningssystemet EREX. Utføre kontroll, analyse, testing og godkjenning av energimåledata fra tog. Utarbeide og vedlikeholde rutiner for håndtering av energimåledata.\\[0,8cm]
 
 06.2013-10.2018         &\textbf{Securitas}: \textit{Mobilvekter}. Arbeidsoppgaver: På uregelmessige tidspunkt i døgnet er vekterens hovedoppgave å forebygge uønskede hendelser. Vekterne foretar inspeksjoner av næringsbygg med den hensikt å drive forebyggende sikkerhetsarbeid. Jeg var også opplæringsansvarlig for nye mobilvektere.\\[0,8cm]
 
@@ -64,6 +66,8 @@ En økonomisk og teknologisk anlagt person med nesten 6 års erfaring fra IT og 
 05.2011-09.2012         &\textbf{BlueStep Bank AB}: \textit{Kundeveileder}. Arbeidsoppgaver: Kartlegge informasjon om kunders finansieringsbehov, samt bistå med innhenting av gjeldsopplysninger på kundene. I tillegg var jeg en del av BlueSteps kundesenter som bistår eksisterende og potensielle kunder med spørsmål rundt låne- og spareprodukter.
 \end{tabularx}
 \end{table}
+
+\newpage
 
 \vspace*{-0,2cm}\noindent\textbf{\textbf{Programmeringsferdigheter}}
 \footnotesize
